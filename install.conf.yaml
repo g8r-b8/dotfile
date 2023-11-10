@@ -2,13 +2,14 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ['~','~/.config']
 
 - link:
     ~/.bashrc: bashrc
     ~/.tmux.conf: tmux.conf
     ~/.config/nvim/init.vim: nvim/init.vim
     ~/.config/kitty/: kitty/
+    ~/.local/bin.yank: yank
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
